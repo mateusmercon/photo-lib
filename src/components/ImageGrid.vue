@@ -13,7 +13,7 @@
             md="2"
             lg="1"
             >
-                <v-card class="hover:shadow-md">
+                <v-card>
                     <v-img
                     :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
                     :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
