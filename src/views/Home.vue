@@ -1,7 +1,24 @@
+<script setup>
+
+import SideBar from '../components/SideBar.vue';
+import ImageGrid from '../components/ImageGrid.vue';
+
+</script>
+
+
 <template>
-  <HelloWorld />
+
+  <v-app>
+    <SideBar/>
+
+    <v-main>
+      <ImageGrid/>
+    </v-main>
+  </v-app>
+
 </template>
 
-<script setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
-</script>
+
+
+
+
