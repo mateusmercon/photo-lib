@@ -1,4 +1,3 @@
-// Composables
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeVue from '@/views/Home.vue'
 

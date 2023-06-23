@@ -2,6 +2,12 @@
 
 import SideBar from '../components/SideBar.vue';
 import ImageGrid from '../components/ImageGrid.vue';
+import { ref } from 'vue';
+
+const isWithColor = ref(true)
+const onSelectOption = (isColor) => {
+  isWithColor.value = isColor
+}
 
 </script>
 
@@ -9,11 +15,13 @@ import ImageGrid from '../components/ImageGrid.vue';
 <template>
 
   <v-app>
-    <SideBar/>
+
+    <SideBar @select-option="onSelectOption"/>
 
     <v-main>
-      <ImageGrid/>
+      <ImageGrid :isWithColor="isWithColor"/>
     </v-main>
+
   </v-app>
 
 </template>
